@@ -6,7 +6,7 @@ import java.util.Map;
 public class MaximumOccurrnce {
 
 	public static void main(String[] args) {
-		String str = "programmingingggg";
+		String str = "programmingin";
 
 		Map<Character, Integer> hm = new HashMap<>();
 		char[] ch = str.toCharArray();
@@ -24,6 +24,11 @@ public class MaximumOccurrnce {
 			}
 		}
 		System.out.println(maxChar);
+		
+		String str1 = "Automation Testing";
+		 String str2 = "Testing";
+		 System.out.println(str1.contains(str2));
+		 
 	}
 
 }
