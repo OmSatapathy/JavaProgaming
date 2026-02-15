@@ -40,14 +40,28 @@ public class CommanElement {
 		for (char c : ch) {
 			hm.put(c, hm.getOrDefault(c, 0) + 1);
 		}
-		
-		for(Map.Entry<Character, Integer> ent: hm.entrySet()) {
-			
-			if(ent.getValue()==1) {
-				System.out.println(ent.getKey() +" : "+ent.getValue());
+
+		for (Map.Entry<Character, Integer> ent : hm.entrySet()) {
+
+			if (ent.getValue() == 1) {
+				System.out.println(ent.getKey() + " : " + ent.getValue());
 			}
 		}
 
+		// Occurance
+
+		String strp = "Automationt";
+
+		char find = 't';
+		int count = 0;
+
+		for (char p : strp.toCharArray()) {
+			if (find == p) {
+				count++;
+			}
+		}
+
+		System.out.println(count);
 	}
 
 }
